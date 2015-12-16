@@ -28,7 +28,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
 # Use Unicorn as the app server
 # gem 'unicorn'
-
+gem 'redis', '~> 3.0.1'
+gem 'hiredis', '~> 0.4.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
