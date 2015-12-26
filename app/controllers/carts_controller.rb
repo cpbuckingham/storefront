@@ -21,4 +21,6 @@ class CartsController < ApplicationController
   def current_user_cart
     "cart#{current_user.id}"
   end
+
+
 end
