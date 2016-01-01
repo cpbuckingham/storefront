@@ -21,4 +21,18 @@ def get_cart_movies
   Movie.find(cart_ids)
 end
 
+def purchase_cart_movies!
+  get_cart_movies.each { |movie| purchase(movie) }
+  $redis.del "cart#{id}"
+end
+
+def purchase(movie)
+  movies << movie unless purchase?(movie)
+end
+
+def purchase?(movie)
+  movies.include?(movie)
+end
+
+
 end
