@@ -11,8 +11,9 @@
       <%=image_tag asset_path("imdb_logo.png")%>
     <%end%>
   </h3>
-  <p class="label movie-label radius mb1">$ <%= @movie.price %></p>
-
+  <p class="label movie-label radius mb1">
+    <%= (current_user && current_user.purchase?(@movie)) ? "Purchased" : "$#{@movie.price}" %>
+  </p>
   <p><%= @movie.description %></p>
 
   <%if signed_in?%>
