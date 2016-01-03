@@ -20,7 +20,7 @@
       <%end%>
       <h4 class="scale">$ <%= movie.price %></h4>
     </div>
-    <%=link_to "Checkout", new_transaction_path, class: "button" unless current_user.get_cart_movies.blank?%>
+    <%=link_to "Checkout", transactions_new_path, class: "button" unless current_user.get_cart_movies.blank?%>
   </div>
   <%end%>
 </div>
