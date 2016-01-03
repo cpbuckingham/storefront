@@ -31,6 +31,10 @@ gem 'devise'
 gem 'redis', '~> 3.0.1'
 gem 'hiredis', '~> 0.4.5'
 # Use Capistrano for deployment
+
+gem 'braintree', '~> 2.33.1'
+gem 'figaro', '~> 0.7.0'
+
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do

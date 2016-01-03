@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20160101202047) do
     t.string   "poster_url",   limit: 255
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
+    t.string   "video_url",    limit: 255
   end
 
   create_table "purchases", force: :cascade do |t|
