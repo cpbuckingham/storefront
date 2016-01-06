@@ -16,7 +16,4 @@
 //= require turbolinks
 //= require_tree .
 
-$(function(){ $(document).foundation();
-  var url = data.url + "&output=embed";
-  window.location.replace(url);
-});
+$(function(){ $(document).foundation(); });
