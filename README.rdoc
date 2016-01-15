@@ -1,28 +1,18 @@
-== README
+bundle install
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+rake db:create
+rake db:migrate
+rake db:seed
 
-Things you may want to cover:
+redis-server
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+rails s
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Test Value	Card Type
+378282246310005	American Express
+371449635398431	American Express
+6011111111111117	Discover
+3530111333300000	JCB
+6304000000000000	Maestro
+5555555555554444	Mastercard
